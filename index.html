@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS | Premium Gaming Zone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-headset"></i> NEXUS<span>ZONE</span>
+        </div>
+        <nav>
+            <ul class="tab-list">
+                <li><button class="tab-btn active" data-target="home">Home</button></li>
+                <li><button class="tab-btn" data-target="arenas">Arenas</button></li>
+                <li><button class="tab-btn" data-target="pricing">Pricing</button></li>
+                <li><button class="tab-btn" data-target="events">Events</button></li>
+                <li><button class="tab-btn" data-target="contact">Contact</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="tab-content active">
+            <div class="hero">
+                <h1>Redefine Your <span>Reality</span></h1>
+                <p>Equipped with RTX 4090s, ultra-wide 240Hz monitors, and professional sim-racing rigs. Step into the ultimate competitive environment.</p>
+                <button class="cta-btn" onclick="document.querySelector('[data-target=\'pricing\']').click()">View Memberships</button>
+            </div>
+        </section>
+
+        <section id="arenas" class="tab-content">
+            <div class="section-header">
+                <h2>Our Gaming Arenas</h2>
+                <p>Tailored environments for every type of gamer.</p>
+            </div>
+            <div class="grid-container">
+                <div class="card">
+                    <i class="fa-solid fa-crosshairs"></i>
+                    <h3>FPS Lounge</h3>
+                    <p>Zero latency, 360Hz displays, and noise-canceling headsets for tactical shooters.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-car-side"></i>
+                    <h3>Sim Racing</h3>
+                    <p>Full motion rigs with direct drive wheels and triple-monitor setups.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-vr-cardboard"></i>
+                    <h3>VR Omni-Deck</h3>
+                    <p>Free-roam virtual reality arenas with haptic feedback suits.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="tab-content">
+            <div class="section-header">
+                <h2>Pricing Plans</h2>
+                <p>Choose your way to play.</p>
+            </div>
+            <div class="grid-container">
+                <div class="card pricing-card">
+                    <h3>Casual Pass</h3>
+                    <div class="price">$15<span>/hr</span></div>
+                    <ul>
+                        <li>Access to Standard PCs</li>
+                        <li>Standard Peripherals</li>
+                        <li>Walk-in only</li>
+                    </ul>
+                    <button class="cta-btn outline">Select</button>
+                </div>
+                <div class="card pricing-card featured">
+                    <h3>Pro Membership</h3>
+                    <div class="price">$199<span>/mo</span></div>
+                    <ul>
+                        <li>Unlimited PC Access</li>
+                        <li>VIP Room Access</li>
+                        <li>Priority Booking</li>
+                    </ul>
+                    <button class="cta-btn">Join Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="tab-content">
+            <div class="section-header">
+                <h2>Upcoming Tournaments</h2>
+                <p>Compete against the best and win prize pools.</p>
+            </div>
+            <div class="list-container">
+                <div class="event-row">
+                    <div class="event-date">Oct 15</div>
+                    <div class="event-info">
+                        <h3>Valorant Regional Clash</h3>
+                        <p>5v5 Tournament | $5,000 Prize Pool</p>
+                    </div>
+                    <button class="cta-btn small">Register</button>
+                </div>
+                <div class="event-row">
+                    <div class="event-date">Oct 22</div>
+                    <div class="event-info">
+                        <h3>Tekken 8 Throwdown</h3>
+                        <p>1v1 Arcade Stick Allowed | $1,500 Prize Pool</p>
+                    </div>
+                    <button class="cta-btn small">Register</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="tab-content">
+            <div class="section-header">
+                <h2>Comms Check</h2>
+                <p>Reach out to book the VIP room or ask about sponsorships.</p>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <input type="text" placeholder="Player Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <textarea rows="5" placeholder="Your Message..." required></textarea>
+                <button type="submit" class="cta-btn">Send Transmission</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NEXUS Gaming Zone. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
